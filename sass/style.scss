@@ -1,0 +1,57 @@
+$primary-color: rgb(87,156,135); /*Couleur principale (ex:Background) */
+$secondary-color: rgb(253,203,70);/* Couleur secondaire (ex:Texte)*/
+$box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.20); /* Valeur pour box-shadow */
+
+@import "libs/link.scss"; /* Style et comportament des liens */
+
+html {
+    height: 100%;
+  body {
+    font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    min-height: 100%;
+    margin: 0; padding: 0;
+  }
+}
+header{
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-color;
+    border-bottom: solid 2px darken($primary-color, 2%);
+    text-align: center;
+    padding: 15px;
+}
+main{
+    padding: 3em;
+    text-align: center;
+    section{
+        display: flex;    
+        justify-content: space-around;
+        margin-bottom: 3em; /* espace entre les menus et le bouton prochainement*/
+        img{
+            width: 8em;
+            box-shadow: $box-shadow;
+        }
+    }
+    
+    .btn{
+        background-color: $primary-color;
+        color: $secondary-color;
+        font-size: 1.5em;
+        border-radius: 0.5em;
+    }
+}
+footer{
+    background-color: $primary-color;
+    color: $secondary-color;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Boucle pour le style des Titre (h1,h2,h3,h4,...)*/
+@for $i from 1 through 4 {
+    h#{$i} {
+        color: $secondary-color;
+    }
+}

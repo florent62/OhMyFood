@@ -1,0 +1,81 @@
+/*Couleur principale (ex:Background) */
+/* Couleur secondaire (ex:Texte)*/
+/* Valeur pour box-shadow */
+/* Style pour les liens du site*/
+a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+a:hover {
+  color: #fdcb46;
+  text-decoration: none;
+}
+
+/* Style et comportament des liens */
+html {
+  height: 100%;
+}
+html body {
+  font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0px;
+  padding: 0px;
+  background-color: #579c87;
+  border-bottom: solid 2px #539581;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  padding: 3em;
+  text-align: center;
+}
+main section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3em;
+  /* espace entre les menus et le bouton prochainement*/
+}
+main section img {
+  width: 8em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+main .btn {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-size: 1.5em;
+  border-radius: 0.5em;
+}
+
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Boucle pour le style des Titre (h1,h2,h3,h4,...)*/
+h1 {
+  color: #fdcb46;
+}
+
+h2 {
+  color: #fdcb46;
+}
+
+h3 {
+  color: #fdcb46;
+}
+
+h4 {
+  color: #fdcb46;
+}
+
+/*# sourceMappingURL=style.css.map */
