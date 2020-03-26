@@ -1,6 +1,7 @@
 $primary-color: rgb(87,156,135); /*Couleur principale (ex:Background) */
 $secondary-color: rgb(253,203,70);/* Couleur secondaire (ex:Texte)*/
 $box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.20); /* Valeur pour box-shadow */
+$size-footer: 1em; /* Valeur qui change la hauteur du footer ET met un margin-bottom de la même valeur pour éviter les chevauchement des contenu*/
 
 @import "libs/link.scss"; /* Style et comportament des liens */
 
@@ -23,16 +24,16 @@ header{
 main{
     padding: 3em;
     text-align: center;
-    section{
+    margin-bottom: $size-footer;
+    .main-container{
         display: flex;    
         justify-content: space-around;
         margin-bottom: 3em; /* espace entre les menus et le bouton prochainement*/
         img{
-            width: 8em;
+            width: 15em;
             box-shadow: $box-shadow;
         }
     }
-    
     .btn{
         background-color: $primary-color;
         color: $secondary-color;
@@ -44,9 +45,12 @@ footer{
     background-color: $primary-color;
     color: $secondary-color;
     width: 100%;
-    padding: 1em;
+    padding: $size-footer;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 /* Boucle pour le style des Titre (h1,h2,h3,h4,...)*/

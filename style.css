@@ -1,6 +1,8 @@
+@charset "UTF-8";
 /*Couleur principale (ex:Background) */
 /* Couleur secondaire (ex:Texte)*/
 /* Valeur pour box-shadow */
+/* Valeur qui change la hauteur du footer ET met un margin-bottom de la même valeur pour éviter les chevauchement des contenu*/
 /* Style pour les liens du site*/
 a {
   text-decoration: none;
@@ -34,15 +36,16 @@ header {
 main {
   padding: 3em;
   text-align: center;
+  margin-bottom: 1em;
 }
-main section {
+main .main-container {
   display: flex;
   justify-content: space-around;
   margin-bottom: 3em;
   /* espace entre les menus et le bouton prochainement*/
 }
-main section img {
-  width: 8em;
+main .main-container img {
+  width: 15em;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 main .btn {
@@ -59,6 +62,9 @@ footer {
   padding: 1em;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 /* Boucle pour le style des Titre (h1,h2,h3,h4,...)*/
