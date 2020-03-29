@@ -32,19 +32,13 @@ main{
     margin-bottom: $size-footer;
     width: 100%;
     .main-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        @media #{$screen-xs}{ /* responsive pour portable*/
-            flex-direction: column;
-        }
         margin-bottom: 3em; /* espace entre les menus et le bouton prochainement*/
         img{
             box-shadow: $box-shadow;
-            max-width: 20%;
+            max-width: 50%;
+            margin: 1em;
             @media #{$screen-xs}{ /* responsive pour portable*/
-                max-width: 65%;
-                margin: 1em;
+               min-width: 80%; 
             }
         }
     }
