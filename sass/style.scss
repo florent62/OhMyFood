@@ -2,11 +2,12 @@ $primary-color: rgb(87,156,135); /*Couleur principale (ex:Background) */
 $secondary-color: rgb(253,203,70);/* Couleur secondaire (ex:Texte)*/
 $box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.20); /* Valeur pour box-shadow */
 $size-footer: 1em; /* Valeur qui change la hauteur du footer ET met un margin-bottom de la même valeur pour éviter les chevauchement des contenu*/
-
-@import "libs/link.scss"; /* Style et comportament des liens */
+@import "libs/link.scss"; /* Style et comportement des liens */
+@import "libs/responsive-screen.scss"; /*Breakpoint des media screen*/
 
 html {
     height: 100%;
+    width: 100%;
   body {
     font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     min-height: 100%;
@@ -16,22 +17,35 @@ html {
 header{
     margin: 0px;
     padding: 0px;
+    width: 100%;
     background-color: $primary-color;
     border-bottom: solid 2px darken($primary-color, 2%);
     text-align: center;
     padding: 15px;
+    h1{
+        font-weight: bold;
+    }
 }
 main{
     padding: 3em;
     text-align: center;
     margin-bottom: $size-footer;
+    width: 100%;
     .main-container{
-        display: flex;    
+        display: flex;
         justify-content: space-around;
+        align-items: center;
+        @media #{$screen-xs}{ /* responsive pour portable*/
+            flex-direction: column;
+        }
         margin-bottom: 3em; /* espace entre les menus et le bouton prochainement*/
         img{
-            width: 15em;
             box-shadow: $box-shadow;
+            max-width: 20%;
+            @media #{$screen-xs}{ /* responsive pour portable*/
+                max-width: 65%;
+                margin: 1em;
+            }
         }
     }
     .btn{
@@ -39,6 +53,8 @@ main{
         color: $secondary-color;
         font-size: 1.5em;
         border-radius: 0.5em;
+        padding-left: 2em; 
+        padding-right: 2em;
     }
 }
 footer{

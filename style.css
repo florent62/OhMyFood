@@ -13,9 +13,16 @@ a:hover {
   text-decoration: none;
 }
 
-/* Style et comportament des liens */
+/* Style et comportement des liens */
+/*Mobile*/
+/*Tablettes*/
+/*Laptop*/
+/* Large laptop*/
+/* 4k screen*/
+/*Breakpoint des media screen*/
 html {
   height: 100%;
+  width: 100%;
 }
 html body {
   font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -27,32 +34,53 @@ html body {
 header {
   margin: 0px;
   padding: 0px;
+  width: 100%;
   background-color: #579c87;
   border-bottom: solid 2px #539581;
   text-align: center;
   padding: 15px;
+}
+header h1 {
+  font-weight: bold;
 }
 
 main {
   padding: 3em;
   text-align: center;
   margin-bottom: 1em;
+  width: 100%;
 }
 main .main-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 3em;
   /* espace entre les menus et le bouton prochainement*/
 }
+@media only screen and (max-width: 426px) {
+  main .main-container {
+    /* responsive pour portable*/
+    flex-direction: column;
+  }
+}
 main .main-container img {
-  width: 15em;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  max-width: 20%;
+}
+@media only screen and (max-width: 426px) {
+  main .main-container img {
+    /* responsive pour portable*/
+    max-width: 65%;
+    margin: 1em;
+  }
 }
 main .btn {
   background-color: #579c87;
   color: #fdcb46;
   font-size: 1.5em;
   border-radius: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 footer {
