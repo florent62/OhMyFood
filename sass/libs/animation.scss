@@ -1,0 +1,5 @@
+a{ /* animations des liens */
+    &:hover{
+        color: darken($secondary-color, 20%);
+    }
+}

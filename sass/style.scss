@@ -4,14 +4,16 @@ $box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.20); /* Valeur pour box-shadow */
 $size-footer: 1em; /* Valeur qui change la hauteur du footer ET met un margin-bottom de la même valeur pour éviter les chevauchement des contenu*/
 @import "libs/link.scss"; /* Style et comportement des liens */
 @import "libs/responsive-screen.scss"; /*Breakpoint des media screen*/
-
+@import "libs/animation.scss"; /*Fichier qui gére les animations CSS*/
+@import "libs/style_menu_enchantée.scss"; /*Style pour le menu "la note enchantée"*/
 html {
     height: 100%;
     width: 100%;
   body {
     font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     min-height: 100%;
-    margin: 0; padding: 0;
+    margin: 0px; 
+    padding: 0px;
   }
 }
 header{
@@ -24,6 +26,7 @@ header{
     padding: 15px;
     h1{
         font-weight: bold;
+        color: $secondary-color;
     }
 }
 main{
@@ -37,9 +40,7 @@ main{
             box-shadow: $box-shadow;
             max-width: 50%;
             margin: 1em;
-            @media #{$screen-xs}{ /* responsive pour portable*/
-               min-width: 80%; 
-            }
+            min-width: 80%;
         }
     }
     .btn{
@@ -63,9 +64,4 @@ footer{
     bottom: 0;
 }
 
-/* Boucle pour le style des Titre (h1,h2,h3,h4,...)*/
-@for $i from 1 through 4 {
-    h#{$i} {
-        color: $secondary-color;
-    }
-}
+/* Titre du site*/

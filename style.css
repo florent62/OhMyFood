@@ -20,6 +20,72 @@ a:hover {
 /* Large laptop*/
 /* 4k screen*/
 /*Breakpoint des media screen*/
+a {
+  /* animations des liens */
+}
+a:hover {
+  color: #dba002;
+}
+
+/*Fichier qui gére les animations CSS*/
+#menu_enchantée {
+  padding: 2em;
+  background-color: #fcdfdb;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 320px) {
+  #menu_enchantée {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #menu_enchantée {
+    width: 65%;
+  }
+}
+#menu_enchantée img {
+  width: 12%;
+}
+#menu_enchantée section {
+  /*Pour centrer et mettre en colonne les titre et tableaux*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+#menu_enchantée section h2 {
+  margin-bottom: 0.5em;
+}
+#menu_enchantée tr {
+  /* Pour centrer les element dans le tableau*/
+}
+@media only screen and (min-width: 320px) {
+  #menu_enchantée tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu_enchantée tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu_enchantée tr td {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #menu_enchantée tr td {
+    font-size: 20px;
+  }
+}
+
+/*Style pour le menu "la note enchantée"*/
 html {
   height: 100%;
   width: 100%;
@@ -27,8 +93,8 @@ html {
 html body {
   font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   min-height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
@@ -42,6 +108,7 @@ header {
 }
 header h1 {
   font-weight: bold;
+  color: #fdcb46;
 }
 
 main {
@@ -58,12 +125,7 @@ main .main-container img {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   max-width: 50%;
   margin: 1em;
-}
-@media only screen and (max-width: 426px) {
-  main .main-container img {
-    /* responsive pour portable*/
-    min-width: 80%;
-  }
+  min-width: 80%;
 }
 main .btn {
   background-color: #579c87;
@@ -86,21 +148,6 @@ footer {
   bottom: 0;
 }
 
-/* Boucle pour le style des Titre (h1,h2,h3,h4,...)*/
-h1 {
-  color: #fdcb46;
-}
-
-h2 {
-  color: #fdcb46;
-}
-
-h3 {
-  color: #fdcb46;
-}
-
-h4 {
-  color: #fdcb46;
-}
+/* Titre du site*/
 
 /*# sourceMappingURL=style.css.map */
