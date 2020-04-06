@@ -473,10 +473,6 @@ header {
   text-align: center;
   padding: 15px;
 }
-header h1 {
-  font-weight: bold;
-  color: #fdcb46;
-}
 
 main {
   text-align: center;
@@ -515,6 +511,27 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+@media only screen and (min-width: 320px) {
+  header img {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header img {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header img {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header img {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
