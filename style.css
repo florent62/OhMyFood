@@ -392,7 +392,7 @@ a:hover {
   /* Démarrez l'animation de secousse et faites durer l'animation pendant 0,5 seconde */
   animation: shake 0.5s;
   /* Une fois l'animation terminée, recommencez */
-  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
 }
 @keyframes shake {
   0% {
@@ -430,12 +430,11 @@ a:hover {
   }
 }
 
-#point-suspension::after {
+#point-suspension:after {
   display: inline-block;
-  animation: dotty steps(1, end) 1.5s infinite;
+  animation: dotty steps(1, end) 2s infinite;
   content: "";
 }
-
 @keyframes dotty {
   0% {
     content: "";
@@ -453,6 +452,7 @@ a:hover {
     content: "";
   }
 }
+
 /*Fichier qui gére les animations CSS*/
 html {
   height: 100%;
@@ -499,6 +499,10 @@ main .btn {
   border-radius: 0.5em;
   padding-left: 2em;
   padding-right: 2em;
+}
+main #point-suspension {
+  font-size: 80px;
+  color: #579c87;
 }
 
 footer {

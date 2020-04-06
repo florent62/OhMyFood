@@ -5,7 +5,7 @@ a{ /* animations des liens */
         animation: shake 0.5s;
       
         /* Une fois l'animation terminée, recommencez */
-        animation-iteration-count: 2;
+        animation-iteration-count: infinite;
     }
     @keyframes shake {
         0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -22,16 +22,18 @@ a{ /* animations des liens */
       } 
 }
 
-#point-suspension::after {
-    display: inline-block;
-    animation: dotty steps(1,end) 1.5s infinite;
-    content: '';
+#point-suspension{
+    &:after {
+        display: inline-block;
+        animation: dotty steps(1,end) 2s infinite;
+        content: '';
     }
       
-@keyframes dotty {
-    0%   { content: ''; }
-    25%  { content: '.'; }
-    50%  { content: '..'; }
-    75%  { content: '...'; }
-    100% { content: ''; }
+    @keyframes dotty {
+        0%   { content: ''; }
+        25%  { content: '.'; }
+        50%  { content: '..'; }
+        75%  { content: '...'; }
+        100% { content: ''; }
+    }
 }

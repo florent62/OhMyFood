@@ -48,6 +48,10 @@ main{
         padding-left: 2em; 
         padding-right: 2em;
     }
+    #point-suspension{
+        font-size: 80px;
+        color: $primary-color;
+    }
 }
 footer{
     background-color: $primary-color;
