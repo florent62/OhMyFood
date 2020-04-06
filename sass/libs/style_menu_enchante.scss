@@ -1,0 +1,26 @@
+$couleur_surlignage: #3d1319;/* Couleur du surlignage des catégorie entrée, plats, desserts */
+$background-color: #fcdfdb;/* Fond du menu*/
+$degrade-color-1:#f05961;/* Première couleurs pour le dégradé de certains élément comme le logo*/
+$degrade-color-2:#f6916a;/* Deuxième couleurs pour le dégradé de certains élément comme le logo*/
+
+#menu_enchantée{
+    background-color: $background-color;
+    h1{
+        font-family: Brush Script MT, Brush Script Std, cursive;
+    }
+    i{
+        background: -webkit-gradient(linear, left top, left bottom, from($degrade-color-1), to($degrade-color-2));/* Pour couleur dégradé*/
+        background-clip:text;/* Pour couleur dégradé*/
+        -webkit-background-clip: text; /* Pour couleur dégradé*/
+        -webkit-text-fill-color: transparent;/* Pour couleur dégradé*/ 
+    }
+    
+    h2{ /* Soulignage des titre h2*/
+        text-decoration: none;
+        background: linear-gradient(to top, $couleur_surlignage 0%, $couleur_surlignage 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+        transition: background-size .5s;
+    }
+    h2:hover{ /* Soulignage des titre h2 (hover)*/
+        background-size: 100% 100%;
+    }
+}

@@ -20,6 +20,240 @@ a:hover {
 /* Large laptop*/
 /* 4k screen*/
 /*Breakpoint des media screen*/
+/*Taille du logo du menu*/
+/* Variable stocker dans style_menu_(...): couleur_surlignage, bakcground-color, degrade-color */
+/* Couleur du surlignage des catégorie entrée, plats, desserts */
+/* Fond du menu*/
+/* Première couleurs pour le dégradé de certains élément comme le logo*/
+/* Deuxième couleurs pour le dégradé de certains élément comme le logo*/
+#menu_enchantée {
+  background-color: #fcdfdb;
+}
+#menu_enchantée h1 {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+#menu_enchantée i {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f05961), to(#f6916a));
+  /* Pour couleur dégradé*/
+  background-clip: text;
+  /* Pour couleur dégradé*/
+  -webkit-background-clip: text;
+  /* Pour couleur dégradé*/
+  -webkit-text-fill-color: transparent;
+  /* Pour couleur dégradé*/
+}
+#menu_enchantée h2 {
+  /* Soulignage des titre h2*/
+  text-decoration: none;
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+#menu_enchantée h2:hover {
+  /* Soulignage des titre h2 (hover)*/
+  background-size: 100% 100%;
+}
+
+/* style unique au menu "la note enchantée"*/
+/* Couleur du surlignage des catégorie entrée, plats, desserts */
+/* Couleur du surlignage des catégorie entrée, plats, desserts */
+/* Couleur du surlignage des catégorie entrée, plats, desserts */
+/* Fond du menu*/
+/* Première couleurs pour le dégradé de certains élément comme le logo*/
+/* Deuxième couleurs pour le dégradé de certains élément comme le logo*/
+#menu_chic {
+  background-color: #fff5fe;
+  /* couleurs du soulignage des titre*/
+  /* couleurs du soulignage des titre*/
+  /* couleurs du soulignage des titre*/
+}
+#menu_chic h1 {
+  margin-top: 1em;
+  background: -webkit-linear-gradient(#df871e, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menu_chic .title_block {
+  width: 100%;
+}
+#menu_chic h2 {
+  /* Soulignage des titre h2*/
+  text-decoration: none;
+  transition: background-size 0.5s;
+  font-weight: bold;
+}
+#menu_chic .titre_section_entre {
+  background: linear-gradient(to top, #c97b1f 0%, #c97b1f 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+}
+#menu_chic .titre_section_repas {
+  background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+}
+#menu_chic .titre_section_dessert {
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+}
+#menu_chic h2:hover {
+  /* Soulignage des titre h2 (hover)*/
+  background-size: 100% 100%;
+}
+#menu_chic section:nth-child(2) {
+  color: #c97b1f;
+}
+#menu_chic section:nth-child(3) {
+  color: #a56799;
+}
+#menu_chic section:nth-child(4) {
+  color: #6e4ccc;
+}
+#menu_chic table {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 320px) {
+  #menu_chic table {
+    width: 100%;
+  }
+  #menu_chic section {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #menu_chic h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu_chic table {
+    width: 75%;
+  }
+  #menu_chic h2 {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #menu_chic {
+    padding: 3em;
+  }
+}
+/* style unique au menu "Chic à la française"*/
+article {
+  padding: 1em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+article i {
+  font-size: 75px;
+}
+article section {
+  /*Pour centrer et mettre en colonne les titre et tableaux*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+article h1 {
+  font-size: 50px;
+}
+article h3 i {
+  /* Taille Logo Pied de menu */
+  font-size: 50px;
+}
+
+.title_block {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.title_block h2 {
+  margin-bottom: 0.5em;
+}
+.title_block img {
+  height: 8px;
+  width: 25%;
+  margin-top: 15px;
+}
+.title_block .title_right {
+  transform: scaleX(-1);
+  /* Symétrie de la barre de droite du titre par rapport à celle de gauche */
+}
+
+@media only screen and (min-width: 320px) {
+  article {
+    width: 100%;
+    margin: 0px;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .title_block {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  article {
+    margin: 2em;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  td {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+  }
+
+  main {
+    padding: 3em;
+  }
+
+  .title_block {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  article {
+    width: 75%;
+  }
+
+  .title_block {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* Pour centrer les element dans le tableau*/
+  td {
+    font-size: 20px;
+  }
+}
+/* SOLUTION POUR METTRE DES LIGNES CLASSIQUE AUTOUR DES TITRES DE SECTION SI LES IMG NE CONVIENNENT PAS !!!
+h2, h2::before, h2::after {
+    display:inline-block;
+    vertical-align: middle;
+}
+h2::before, h2::after {
+    height:2px;
+    margin-right: 25px;
+    margin-left: 25px;
+    width:200px;
+    background: rgb(0, 0, 0);
+    content:""
+}*/
+/*Style pour le menu "la note enchantée"*/
+/* &couleur_surlignage est défini dans les page style_menu_(nom du menu)*/
 a {
   /* animations des liens */
 }
@@ -28,64 +262,6 @@ a:hover {
 }
 
 /*Fichier qui gére les animations CSS*/
-#menu_enchantée {
-  padding: 2em;
-  background-color: #fcdfdb;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-}
-@media only screen and (min-width: 320px) {
-  #menu_enchantée {
-    width: 90%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #menu_enchantée {
-    width: 65%;
-  }
-}
-#menu_enchantée img {
-  width: 12%;
-}
-#menu_enchantée section {
-  /*Pour centrer et mettre en colonne les titre et tableaux*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3em;
-}
-#menu_enchantée section h2 {
-  margin-bottom: 0.5em;
-}
-#menu_enchantée tr {
-  /* Pour centrer les element dans le tableau*/
-}
-@media only screen and (min-width: 320px) {
-  #menu_enchantée tr {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #menu_enchantée tr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #menu_enchantée tr td {
-    margin-right: 1.5em;
-    margin-left: 1.5em;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  #menu_enchantée tr td {
-    font-size: 20px;
-  }
-}
-
-/*Style pour le menu "la note enchantée"*/
 html {
   height: 100%;
   width: 100%;
@@ -99,7 +275,6 @@ html body {
 
 header {
   margin: 0px;
-  padding: 0px;
   width: 100%;
   background-color: #579c87;
   border-bottom: solid 2px #539581;
@@ -112,13 +287,12 @@ header h1 {
 }
 
 main {
-  padding: 3em;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   width: 100%;
 }
 main .main-container {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   /* espace entre les menus et le bouton prochainement*/
 }
 main .main-container img {
@@ -147,7 +321,5 @@ footer {
   left: 0;
   bottom: 0;
 }
-
-/* Titre du site*/
 
 /*# sourceMappingURL=style.css.map */

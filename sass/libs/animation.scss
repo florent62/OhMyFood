@@ -1,3 +1,4 @@
+/* &couleur_surlignage est défini dans les page style_menu_(nom du menu)*/
 a{ /* animations des liens */
     &:hover{
         color: darken($secondary-color, 20%);
