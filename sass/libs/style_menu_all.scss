@@ -2,6 +2,8 @@ $size_logo: 75px; /*Taille du logo du menu*/
 /* Variable stocker dans style_menu_(...): couleur_surlignage, bakcground-color, degrade-color */
 @import "style_menu_enchante.scss"; /* style unique au menu "la note enchantée"*/
 @import "style_menu_chic.scss";/* style unique au menu "Chic à la française"*/
+@import "style_menu_papilles.scss";/* style unique au menu "Le délice des papilles"*/
+@import "style_menu_palette.scss";/* style unique au menu "Le délice des papilles"*/
 article{
     padding: 1em;
     box-shadow: $box-shadow;

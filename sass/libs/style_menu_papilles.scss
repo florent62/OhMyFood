@@ -1,0 +1,72 @@
+$couleur_section_entre: #0228dd;/* Couleur du surlignage des catégorie entrée, plats, desserts */
+$couleur_section_repas: #0670f3;/* Couleur du surlignage des catégorie entrée, plats, desserts */
+$couleur_section_dessert: #229df9;/* Couleur du surlignage des catégorie entrée, plats, desserts */
+$background-color: #edefef;/* Fond du menu*/
+$degrade-color-1:#0228dd;/* Première couleurs pour le dégradé de certains élément comme le logo*/
+$degrade-color-2:#0989fb;/* Deuxième couleurs pour le dégradé de certains élément comme le logo*/
+
+#menu_papilles{
+    background-color: $background-color;
+    h1{
+        margin-top: 1em;
+        background: -webkit-linear-gradient($degrade-color-1, $degrade-color-2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .title_block{
+        width: 90%;
+    }
+    h2{ /* Soulignage des titre h2*/
+        text-decoration: none;
+        transition: background-size .5s;
+        font-weight: bold;
+    } /* couleurs du soulignage des titre*/
+    .titre_section_entre{
+        background: linear-gradient(to top, $couleur_section_entre 0%, $couleur_section_entre 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    } /* couleurs du soulignage des titre*/
+    .titre_section_repas{
+        background: linear-gradient(to top, $couleur_section_repas 0%, $couleur_section_repas 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    } /* couleurs du soulignage des titre*/
+    .titre_section_dessert{
+        background: linear-gradient(to top, $couleur_section_dessert 0%, $couleur_section_dessert 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    }
+    h2:hover{ /* Soulignage des titre h2 (hover)*/
+        background-size: 100% 100%;
+    }   
+    table{
+        margin-top: 1em;
+    }
+
+}
+@media #{$screen-xs}{
+    #menu_papilles{
+        table{
+            width: 100%;
+        }
+        section{
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+    
+}
+@media #{$screen-md}{
+    #menu_papilles{
+        table{
+            width: 75%;
+            text-align: left;
+        }
+        h2{
+            font-size: 26px;
+        }
+    }
+}
+@media #{$screen-lg}{
+    #menu_papilles{
+        padding: 3em;
+    }
+}
