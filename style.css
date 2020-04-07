@@ -386,11 +386,11 @@ h2::before, h2::after {
 /*Style pour le menu "la note enchantée"*/
 /* &couleur_surlignage est défini dans les page style_menu_(nom du menu)*/
 a {
-  /* animations des liens */
+  /* animations des liens mentions légales et Contactez-nous */
 }
 a:hover {
   /* Démarrez l'animation de secousse et faites durer l'animation pendant 0,5 seconde */
-  animation: shake 0.5s;
+  animation: shake 0.3s;
   /* Une fois l'animation terminée, recommencez */
   animation-iteration-count: infinite;
 }
@@ -430,6 +430,7 @@ a:hover {
   }
 }
 
+/* Animation des point de suspension !!! */
 #point-suspension:after {
   display: inline-block;
   animation: dotty steps(1, end) 2s infinite;
@@ -451,6 +452,24 @@ a:hover {
   100% {
     content: "";
   }
+}
+
+/* Effet de zoom sur une image --ORIGINAL---- */
+.wprock-img-zoom-hover .wprock-img-zoom {
+  overflow: hidden;
+  position: relative;
+}
+.wprock-img-zoom-hover .wprock-img-zoom * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wprock-img-zoom-hover .wprock-img-zoom img {
+  max-width: 100%;
+  transition: all 0.8s;
+}
+.wprock-img-zoom-hover:hover .wprock-img-zoom img {
+  transform: scale(1.2);
 }
 
 /*Fichier qui gére les animations CSS*/
@@ -482,11 +501,11 @@ main {
 main .main-container {
   margin-bottom: 2em;
   /* espace entre les menus et le bouton prochainement*/
-}
-main .main-container img {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  margin: 1em;
+  /*img{
+      box-shadow: $box-shadow;
+      width: 80%;
+      margin: 1em;
+  }*/
 }
 main .btn {
   background-color: #579c87;
@@ -499,6 +518,13 @@ main .btn {
 main #point-suspension {
   font-size: 80px;
   color: #579c87;
+}
+
+.wprock-img-zoom-hover {
+  width: 100%;
+  max-width: 300px;
+  margin: 100px auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {

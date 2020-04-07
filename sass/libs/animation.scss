@@ -1,8 +1,9 @@
 /* &couleur_surlignage est défini dans les page style_menu_(nom du menu)*/
-a{ /* animations des liens */
+
+a{ /* animations des liens mentions légales et Contactez-nous */
     &:hover {
         /* Démarrez l'animation de secousse et faites durer l'animation pendant 0,5 seconde */
-        animation: shake 0.5s;
+        animation: shake 0.3s;
       
         /* Une fois l'animation terminée, recommencez */
         animation-iteration-count: infinite;
@@ -22,6 +23,8 @@ a{ /* animations des liens */
       } 
 }
 
+
+/* Animation des point de suspension !!! */
 #point-suspension{
     &:after {
         display: inline-block;
@@ -35,5 +38,29 @@ a{ /* animations des liens */
         50%  { content: '..'; }
         75%  { content: '...'; }
         100% { content: ''; }
+    }
+}
+
+/* Effet de zoom sur une image --ORIGINAL---- */
+.wprock-img-zoom-hover {
+    .wprock-img-zoom {
+        overflow: hidden;
+        position: relative;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            max-width: 100%;
+            transition: all 0.8s;
+        }
+    }
+    &:hover {
+        .wprock-img-zoom {
+            img {
+                transform: scale(1.20);
+            }
+        }
     }
 }
