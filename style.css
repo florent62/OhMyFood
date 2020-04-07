@@ -385,10 +385,10 @@ h2::before, h2::after {
 }*/
 /*Style pour le menu "la note enchantée"*/
 /* &couleur_surlignage est défini dans les page style_menu_(nom du menu)*/
-a {
+footer {
   /* animations des liens mentions légales et Contactez-nous */
 }
-a:hover {
+footer a:hover {
   /* Démarrez l'animation de secousse et faites durer l'animation pendant 0,5 seconde */
   animation: shake 0.3s;
   /* Une fois l'animation terminée, recommencez */
@@ -454,7 +454,7 @@ a:hover {
   }
 }
 
-/* Effet de zoom sur une image --ORIGINAL---- */
+/* Effet de zoom sur une image */
 .wprock-img-zoom-hover .wprock-img-zoom {
   overflow: hidden;
   position: relative;
@@ -520,13 +520,6 @@ main #point-suspension {
   color: #579c87;
 }
 
-.wprock-img-zoom-hover {
-  width: 100%;
-  max-width: 300px;
-  margin: 100px auto;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-}
-
 footer {
   background-color: #579c87;
   color: #fdcb46;
@@ -539,12 +532,22 @@ footer {
   bottom: 0;
 }
 
+.wprock-img-zoom-hover {
+  /* Pour gérer l'effet zoom sur les menu au survol de la souris */
+  margin: 25px auto;
+}
+.wprock-img-zoom-hover .wprock-img-zoom {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (min-width: 320px) {
+  /* Petit écran*/
   header img {
     width: 75%;
   }
 }
 @media only screen and (min-width: 768px) {
+  /*Moyen ecran type tablette*/
   header img {
     width: 50%;
   }
@@ -552,6 +555,10 @@ footer {
 @media only screen and (min-width: 1024px) {
   header img {
     width: 30%;
+  }
+
+  .wprock-img-zoom-hover {
+    max-width: 20%;
   }
 }
 @media only screen and (min-width: 1440px) {

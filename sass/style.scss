@@ -49,12 +49,6 @@ main{
         color: $primary-color;
     }
 }
-.wprock-img-zoom-hover {
-    width: 100%; 
-    max-width: 300px;
-    margin: 100px auto; 
-    box-shadow: $box-shadow;
-}
     footer{
     background-color: $primary-color;
     color: $secondary-color;
@@ -66,26 +60,37 @@ main{
     left: 0;
     bottom: 0;
 }
-@media #{$screen-xs}{
+
+.wprock-img-zoom-hover { /* Pour gérer l'effet zoom sur les menu au survol de la souris */
+    margin: 25px auto;
+    .wprock-img-zoom{
+        box-shadow: $box-shadow;
+    } 
+    
+}
+@media #{$screen-xs}{/* Petit écran*/
     header{
         img{
             width: 75%;
         }    
     } 
 }
-@media #{$screen-md}{
+@media #{$screen-md}{/*Moyen ecran type tablette*/
     header{
         img{
             width: 50%;
         }    
-    } 
+    }
 }
 @media #{$screen-lg}{
     header{
         img{
             width: 30%;
         }    
-    } 
+    }
+    .wprock-img-zoom-hover{
+        max-width: 20%;
+    }
 }
 @media #{$screen-xl}{
     header{
