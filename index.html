@@ -7,8 +7,6 @@
         <meta name="author" content="Florent Noel">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/> <!-- Favicon-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/c07d48b88e.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><!-- Appel de la police roboto-->
@@ -21,37 +19,38 @@
                 <header id="block1" class=""><!-- header avec la class block1 pour gerer le responsive avec bootstrap-->
                     <a href="index.html"><img src="images/Logo-ohmyfood.png" alt="Logo ohmyfood"></a>
                 </header>
-                <main id="block2" class="col-lg-12"><!-- main avec la class block2 pour gerer le responsive avec Bootstrap-->
+                <main>
                     <div class="main-container"><!-- Container principale avec les élément centraux (menu et bouton prochainement)-->
-                        <div class="row"> <!-- Ligne bootstrap-->
-                            <div class="wprock-img-zoom-hover col-12 col-md-6 col-lg-3">
-                                <div class="wprock-img-zoom">
+                            <div class="wprock-img-zoom-hover">
+                                <div class="wprock-img-zoom" id="wprock-img-zoom-enchante">
                                     <a href="menu_echantée.html"><img src="menu/menu-1b.png" alt="Menu du restaurant 'La note enchantée'"></a>
                                 </div>
                             </div>
-                            <div class="wprock-img-zoom-hover col-12 col-md-6 col-lg-3">
-                                <div class="wprock-img-zoom">
+                            <div class="wprock-img-zoom-hover">
+                                <div class="wprock-img-zoom" id="wprock-img-zoom-chic">
                                     <a href="menu_chic.html"><img src="menu/menu-2b.png" alt="Menu du restaurant: Le chic à la française"></a>
                                 </div>
-                            </div> 
-                            <div class="wprock-img-zoom-hover col-12 col-md-6 col-lg-3">
-                                <div class="wprock-img-zoom">
+                            </div>
+                    </div>
+                    <div class="main-container">
+                            <div class="wprock-img-zoom-hover">
+                                <div class="wprock-img-zoom" id="wprock-img-zoom-papilles">
                                     <a href="menu_papilles.html"><img src="menu/menu-3b.png" alt="Menu du restaurant: Le délice des papilles"></a>
                                 </div>
                             </div> 
-                            <div class="wprock-img-zoom-hover col-12 col-md-6 col-lg-3">
-                                <div class="wprock-img-zoom">
+                            <div class="wprock-img-zoom-hover">
+                                <div class="wprock-img-zoom" id="wprock-img-zoom-palette">
                                     <a href="menu_palette.html"><img src="menu/menu-4b.png" alt="Menu du restaurant: La palette du goût"></a>
                                 </div>
                             </div>
-                        </div>   
                     </div>
+                    <div class="btn">Prochainement</div>
                     <h1 id="suspension-animation">
                         <span>.</span>
                         <span>.</span>
                         <span>.</span>
                     </h1>
-                    <div class="btn">Prochainement</div>
+
                 </main>
                 <footer>
                     <a href="404.html">Mentions légales</a>

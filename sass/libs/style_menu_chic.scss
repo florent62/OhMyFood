@@ -46,6 +46,9 @@ $degrade-color-2:#8f5bfe;/* Deuxième couleurs pour le dégradé de certains él
         margin-top: 1em;
     }
 }
+#wprock-img-zoom-chic{
+    background-color: $background-color;
+}
 @media #{$screen-xs}{
     #menu_chic{
         table{

@@ -1,7 +1,7 @@
 $couleur_section_entre: #0228dd;/* Couleur du surlignage des catégorie entrée, plats, desserts */
 $couleur_section_repas: #0670f3;/* Couleur du surlignage des catégorie entrée, plats, desserts */
 $couleur_section_dessert: #229df9;/* Couleur du surlignage des catégorie entrée, plats, desserts */
-$background-color: #edefef;/* Fond du menu*/
+$background-color: #f9f9f9;/* Fond du menu*/
 $degrade-color-1:#0228dd;/* Première couleurs pour le dégradé de certains élément comme le logo*/
 $degrade-color-2:#0989fb;/* Deuxième couleurs pour le dégradé de certains élément comme le logo*/
 
@@ -43,6 +43,9 @@ $degrade-color-2:#0989fb;/* Deuxième couleurs pour le dégradé de certains él
         margin-top: 1em;
     }
 
+}
+#wprock-img-zoom-papilles{
+    background-color: $background-color;
 }
 @media #{$screen-xs}{
     #menu_papilles{

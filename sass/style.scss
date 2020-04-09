@@ -12,27 +12,35 @@ html {
   body {
     font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     min-height: 100%;
+    width: 100%;
     margin: 0px; 
     padding: 0px;
   }
 }
 header{
     margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 100%;
     background-color: $primary-color;
     border-bottom: solid 2px darken($primary-color, 2%);
     text-align: center;
-    padding: 15px;
 }
 main{
     text-align: center;
     margin-bottom: $size-footer + 8em;
     width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .main-container{
-        margin-bottom: 2em; /* espace entre les menus et le bouton prochainement*/
+        margin-bottom: 2em; /* Espace entre les menus et le bouton prochainement*/
     }
     .btn{
         background-color: $primary-color;
+        width: auto;
+        padding: 8px;
         color: $secondary-color;
         font-size: 1.5em;
         border-radius: 0.5em;
@@ -44,16 +52,20 @@ main{
     background-color: $primary-color;
     color: $secondary-color;
     width: 100%;
-    padding: 1em;
+    padding: $size-footer;
+    padding-left: 1em;
     display: flex;
     justify-content: space-between;
     position: fixed;
     left: 0;
     bottom: 0;
+    a{
+        margin-right: 2em;
+    }
 }
 
 .wprock-img-zoom-hover { /* Pour gérer l'effet zoom sur les menu au survol de la souris */
-    margin: 25px auto;
+    margin: 10px auto;
     .wprock-img-zoom{
         box-shadow: $box-shadow;
     } 
@@ -72,6 +84,13 @@ main{
             width: 50%;
         }    
     }
+    .main-container{
+        display: flex;
+        justify-content: center;
+        .wprock-img-zoom{
+            margin: 2em;
+        } 
+    }
 }
 @media #{$screen-lg}{
     header{
@@ -80,7 +99,8 @@ main{
         }    
     }
     .wprock-img-zoom-hover{
-        max-width: 20%;
+        max-width: 35%;
+        margin: 0px;
     }
 }
 @media #{$screen-xl}{
@@ -88,6 +108,10 @@ main{
         img{
             width: 20%;
         }    
+    }
+    .wprock-img-zoom-hover{
+        max-width: 20%;
+        margin: 0px;
     } 
 }
 

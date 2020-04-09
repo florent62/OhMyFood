@@ -29,6 +29,9 @@ $degrade-color-2:#beff80;/* Deuxième couleurs pour le dégradé de certains él
     }
 
 }
+#wprock-img-zoom-palette{
+    background-color: $background-color;
+}
 @media #{$screen-xs}{
     #menu_palette{
         table{

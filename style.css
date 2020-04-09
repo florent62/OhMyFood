@@ -50,6 +50,10 @@ a:hover {
   background-size: 100% 100%;
 }
 
+#wprock-img-zoom-enchante {
+  background-color: #fcdfdb;
+}
+
 /* style unique au menu "la note enchantée"*/
 /* Couleur du surlignage des catégorie entrée, plats, desserts */
 /* Couleur du surlignage des catégorie entrée, plats, desserts */
@@ -104,6 +108,10 @@ a:hover {
   margin-top: 1em;
 }
 
+#wprock-img-zoom-chic {
+  background-color: #fff5fe;
+}
+
 @media only screen and (min-width: 320px) {
   #menu_chic table {
     width: 100%;
@@ -138,7 +146,7 @@ a:hover {
 /* Première couleurs pour le dégradé de certains élément comme le logo*/
 /* Deuxième couleurs pour le dégradé de certains élément comme le logo*/
 #menu_papilles {
-  background-color: #edefef;
+  background-color: #f9f9f9;
   /* couleurs du soulignage des titre*/
   /* couleurs du soulignage des titre*/
   /* couleurs du soulignage des titre*/
@@ -177,6 +185,10 @@ a:hover {
 }
 #menu_papilles table {
   margin-top: 1em;
+}
+
+#wprock-img-zoom-papilles {
+  background-color: #f9f9f9;
 }
 
 @media only screen and (min-width: 320px) {
@@ -236,6 +248,10 @@ a:hover {
 }
 #menu_palette table {
   margin-top: 1em;
+}
+
+#wprock-img-zoom-palette {
+  background-color: #ffffff;
 }
 
 @media only screen and (min-width: 320px) {
@@ -568,30 +584,38 @@ html {
 html body {
   font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   min-height: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
 }
 
 header {
   margin: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 100%;
   background-color: #579c87;
   border-bottom: solid 2px #539581;
   text-align: center;
-  padding: 15px;
 }
 
 main {
   text-align: center;
   margin-bottom: 9em;
   width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main .main-container {
   margin-bottom: 2em;
-  /* espace entre les menus et le bouton prochainement*/
+  /* Espace entre les menus et le bouton prochainement*/
 }
 main .btn {
   background-color: #579c87;
+  width: auto;
+  padding: 8px;
   color: #fdcb46;
   font-size: 1.5em;
   border-radius: 0.5em;
@@ -604,16 +628,20 @@ footer {
   color: #fdcb46;
   width: 100%;
   padding: 1em;
+  padding-left: 1em;
   display: flex;
   justify-content: space-between;
   position: fixed;
   left: 0;
   bottom: 0;
 }
+footer a {
+  margin-right: 2em;
+}
 
 .wprock-img-zoom-hover {
   /* Pour gérer l'effet zoom sur les menu au survol de la souris */
-  margin: 25px auto;
+  margin: 10px auto;
 }
 .wprock-img-zoom-hover .wprock-img-zoom {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
@@ -630,6 +658,14 @@ footer {
   header img {
     width: 50%;
   }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .wprock-img-zoom {
+    margin: 2em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   header img {
@@ -637,12 +673,18 @@ footer {
   }
 
   .wprock-img-zoom-hover {
-    max-width: 20%;
+    max-width: 35%;
+    margin: 0px;
   }
 }
 @media only screen and (min-width: 1440px) {
   header img {
     width: 20%;
+  }
+
+  .wprock-img-zoom-hover {
+    max-width: 20%;
+    margin: 0px;
   }
 }
 
