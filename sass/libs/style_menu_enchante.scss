@@ -5,9 +5,6 @@ $degrade-color-2:#f6916a;/* Deuxième couleurs pour le dégradé de certains él
 
 #menu_enchantée{
     background-color: $background-color;
-    h1{
-        font-family: "Brush Script MT", "Brush Script Std", cursive;
-    }
     i{
         background: -webkit-gradient(linear, left top, left bottom, from($degrade-color-1), to($degrade-color-2));/* Pour couleur dégradé*/
         background-clip:text;/* Pour couleur dégradé*/

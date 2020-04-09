@@ -29,9 +29,6 @@ a:hover {
 #menu_enchantée {
   background-color: #fcdfdb;
 }
-#menu_enchantée h1 {
-  font-family: "Brush Script MT", "Brush Script Std", cursive;
-}
 #menu_enchantée i {
   background: -webkit-gradient(linear, left top, left bottom, from(#f05961), to(#f6916a));
   /* Pour couleur dégradé*/
@@ -287,6 +284,7 @@ article section {
 }
 article h1 {
   font-size: 50px;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
 }
 article h3 i {
   /* Taille Logo Pied de menu */
