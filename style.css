@@ -30,7 +30,7 @@ a:hover {
   background-color: #fcdfdb;
 }
 #menu_enchantée h1 {
-  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
 }
 #menu_enchantée i {
   background: -webkit-gradient(linear, left top, left bottom, from(#f05961), to(#f6916a));
@@ -81,6 +81,10 @@ a:hover {
   transition: background-size 0.5s;
   font-weight: bold;
 }
+#menu_chic h2:hover {
+  /* Soulignage des titre h2 (hover)*/
+  background-size: 100% 100%;
+}
 #menu_chic .titre_section_entre {
   background: linear-gradient(to top, #c97b1f 0%, #c97b1f 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
@@ -89,10 +93,6 @@ a:hover {
 }
 #menu_chic .titre_section_dessert {
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-}
-#menu_chic h2:hover {
-  /* Soulignage des titre h2 (hover)*/
-  background-size: 100% 100%;
 }
 #menu_chic section:nth-child(2) {
   color: #c97b1f;
@@ -160,6 +160,10 @@ a:hover {
   text-decoration: none;
   transition: background-size 0.5s;
   font-weight: bold;
+}
+#menu_papilles h2:hover {
+  /* Soulignage des titre h2 (hover)*/
+  background-size: 100% 100%;
 }
 #menu_papilles .titre_section_entre {
   background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
@@ -587,11 +591,6 @@ main {
 main .main-container {
   margin-bottom: 2em;
   /* espace entre les menus et le bouton prochainement*/
-  /*img{
-      box-shadow: $box-shadow;
-      width: 80%;
-      margin: 1em;
-  }*/
 }
 main .btn {
   background-color: #579c87;
@@ -600,10 +599,6 @@ main .btn {
   border-radius: 0.5em;
   padding-left: 2em;
   padding-right: 2em;
-}
-main #point-suspension {
-  font-size: 80px;
-  color: #579c87;
 }
 
 footer {

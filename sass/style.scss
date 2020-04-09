@@ -30,11 +30,6 @@ main{
     width: 100%;
     .main-container{
         margin-bottom: 2em; /* espace entre les menus et le bouton prochainement*/
-        /*img{
-            box-shadow: $box-shadow;
-            width: 80%;
-            margin: 1em;
-        }*/
     }
     .btn{
         background-color: $primary-color;
@@ -43,10 +38,6 @@ main{
         border-radius: 0.5em;
         padding-left: 2em; 
         padding-right: 2em;
-    }
-    #point-suspension{
-        font-size: 80px;
-        color: $primary-color;
     }
 }
     footer{

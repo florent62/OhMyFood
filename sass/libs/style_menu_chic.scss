@@ -20,6 +20,9 @@ $degrade-color-2:#8f5bfe;/* Deuxième couleurs pour le dégradé de certains él
         text-decoration: none;
         transition: background-size .5s;
         font-weight: bold;
+        &:hover{ /* Soulignage des titre h2 (hover)*/
+            background-size: 100% 100%;
+        }
     } /* couleurs du soulignage des titre*/
     .titre_section_entre{
         background: linear-gradient(to top, $couleur_section_entre 0%, $couleur_section_entre 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -29,9 +32,6 @@ $degrade-color-2:#8f5bfe;/* Deuxième couleurs pour le dégradé de certains él
     } /* couleurs du soulignage des titre*/
     .titre_section_dessert{
         background: linear-gradient(to top, $couleur_section_dessert 0%, $couleur_section_dessert 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    }
-    h2:hover{ /* Soulignage des titre h2 (hover)*/
-        background-size: 100% 100%;
     }
     section:nth-child(2){
         color:$couleur_section_entre;

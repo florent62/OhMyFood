@@ -19,9 +19,10 @@ $degrade-color-2:#beff80;/* Deuxième couleurs pour le dégradé de certains él
         transition: background-size .5s;
         background: linear-gradient(to top, $couleur_section 0%, $couleur_section 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
         font-weight: bold;
-    }
-    h2:hover{ /* Soulignage des titre h2 (hover)*/
-        background-size: 100% 100%;
+    
+        &:hover{ /* Soulignage des titre h2 (hover)*/
+            background-size: 100% 100%;
+        }
     }   
     table{
         margin-top: 1em;
